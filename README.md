@@ -9,12 +9,15 @@ Lato web font package with font files, less, scss, and CSS.  Why? Because Google
   bower install lato --save
   ```
 
-2. Import the lato.less, lato.scss or lato.css file into your project
+2. Import the lato.less, lato.scss, lato.styl, or lato.css file into your project
   ```css
   @import: "../some/path/lato/css/lato.css";
   ```
   ```less
   @import: "../some/path/lato/less/lato.less";
+  ```
+  ```stylus
+  @import "../some/path/lato/stylus/lato"
   ```
   ```scss
   @import: "../some/path/lato/scss/lato";
@@ -26,6 +29,9 @@ Lato web font package with font files, less, scss, and CSS.  Why? Because Google
   ```
   ```scss
   $lato-font-path: '../font';
+  ```
+  ```stylus
+  $lato-font-path = '../font'
   ```
 
 ## Font Info ##
@@ -61,8 +67,12 @@ http://www.latofonts.com/
 ## Contributors ##
 * [Mike Kelly](https://github.com/mrkelly)
 * [Julian Dreissig](https://github.com/thirtified)
+* [Daniel Flanagan](https://github.com/lytedev)
 
 ## Change Log ##
+### 0.4.0 ###
+ * Added Stylus
+
 ### 0.2.0 ###
  * Added SCSS
 

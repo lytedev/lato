@@ -27,6 +27,14 @@ module.exports = function (grunt) {
       }
     },
 
+    stylus: {
+      dist: {
+        files: {
+          'temp.css': 'stylus/lato.styl'
+        }
+      }
+    },
+
     cssmin :{
       app : {
         files : {
@@ -41,7 +49,8 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-stylus');
 
   // Default Task Validates Less and Builds CSS for dist
-  grunt.registerTask("default", ['clean', 'less', 'sass', 'cssmin', 'clean:temp']);
+  grunt.registerTask("default", ['clean', 'less', 'sass', 'stylus', 'cssmin', 'clean:temp']);
 };
